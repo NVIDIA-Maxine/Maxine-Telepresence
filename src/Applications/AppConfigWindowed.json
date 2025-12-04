@@ -1,0 +1,10 @@
+{
+  "WindowModule": {
+    "enforce_window_resolution": true,
+    "window_mode": "WINDOWED",
+    "window_height": 1080,
+    "window_width": 1920
+  },
+  "exit_at_eof": true,
+  "log_level": 1
+}

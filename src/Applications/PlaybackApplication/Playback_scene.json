@@ -1,0 +1,105 @@
+{
+  "scene": {
+    "entities": {
+      "1ff951d7-b941-425d-92dc-7507860316a5": {
+        "components": {
+          "AudioInputComponent": {
+            "capture_api": "WEB_CAMERA"
+          },
+          "AudioSinkComponent": {},
+          "AudioSourceComponent": {},
+          "PoseCalibrationBehavior": {
+            "calibration_delay_ms": 1000,
+            "calibrate_on_startup": true
+          },
+          "TrackedHeadComponent": {},
+          "TransformComponent": {
+            "rotation": [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "VideoFrameComponent": {},
+          "CameraCalibrationComponent": {},
+          "WebCameraComponent": {
+            "camera_descriptor": {
+              "camera_device_path": "../../../nv3dvc_resources/webcam/FaceTrack.mp4"
+            },
+            "capture_api": "MULTIMEDIA_FILE"
+          }
+        },
+        "name": "RemoteWebcam",
+        "parent": "ef7e114f-73bb-4b7a-bd9c-ad91e5be520f"
+      },
+      "4b49c56f-bba2-4f48-898b-442889784d77": {
+        "components": {
+          "CubeMapComponent": {},
+          "TransformComponent": null
+        },
+        "name": "SkyBox"
+      },
+      "8bbdc8b0-7bf4-47bc-832f-b521f440e9cf": {
+        "components": {
+          "EncodedTriplaneComponent": {},
+          "VideoEffectsComponent": {},
+          "VideoFrameComponent": {}
+        },
+        "name": "RemoteCropAndTriplane",
+        "parent": "1ff951d7-b941-425d-92dc-7507860316a5"
+      },
+      "9fa4b206-5e35-4a2f-903d-4f7e6c7fcb12": {
+        "components": {
+          "RenderableTriplaneComponent": {},
+          "TransformComponent": {},
+          "TriplaneBufferComponent": {}
+        },
+        "name": "TriplaneVolume",
+        "parent": "ef7e114f-73bb-4b7a-bd9c-ad91e5be520f"
+      },
+      "c2df86aa-96ce-4b08-b012-46210542c45c": {
+        "components": {
+          "AudioOutputComponent": {},
+          "CameraComponent": {},
+          "CameraControlBehavior": {},
+          "DisplayComponent": {
+            "horizontal_resolution_divider": 1,
+            "vertical_resolution_divider": 1
+          },
+          "RecordingBehavior": {
+            "enable": false,
+            "file_path": "recording.mp4"
+          },
+          "RecordingCallbackComponent": {},
+          "StereoViewComponent": {},
+          "TransformComponent": {}
+        },
+        "name": "Display"
+      },
+      "ef7e114f-73bb-4b7a-bd9c-ad91e5be520f": {
+        "components": {
+          "TransformComponent": {
+            "rotation": [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "name": "RemoteDisplay"
+      }
+    }
+  }
+}

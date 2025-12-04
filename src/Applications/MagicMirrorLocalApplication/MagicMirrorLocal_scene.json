@@ -1,0 +1,97 @@
+{
+  "scene": {
+    "entities": {
+      "049e18eb-dd87-41cc-a104-7d33e8530ec6": {
+        "components": {
+          "PoseCalibrationBehavior": {
+            "calibration_delay_ms": 0
+          },
+          "TrackedHeadComponent": {},
+          "TransformComponent": {
+            "rotation": [
+              0.0,
+              0.9961947202682495,
+              0.08715573698282242,
+              0.0
+            ],
+            "translation": [
+              0.0,
+              0.20000000298023224,
+              0.0
+            ]
+          },
+          "VideoFrameComponent": {
+            "show_video": true
+          },
+          "CameraCalibrationComponent": {},
+          "WebCameraComponent": {
+            "camera_descriptor": {
+              "flip_horizontal": true
+            },
+            "capture_api": "OPENCV_WEBCAM"
+          }
+        },
+        "name": "Webcam",
+        "parent": "de7896ce-a5d4-4f63-b973-256911d35403"
+      },
+      "2b3e151b-bd16-4146-b90f-4eae6417ec1a": {
+        "components": {
+          "EncodedTriplaneComponent": {},
+          "VideoEffectsComponent": {},
+          "VideoFrameComponent": {}
+        },
+        "name": "VideoOut",
+        "parent": "049e18eb-dd87-41cc-a104-7d33e8530ec6"
+      },
+      "6851a790-b401-465d-8221-ecb434abae2e": {
+        "components": {
+          "CubeMapComponent": {},
+          "TransformComponent": null
+        },
+        "name": "SkyBox"
+      },
+      "80faa3bb-54dd-46ea-8d7d-ef2bb0415ff6": {
+        "components": {
+          "RenderableTriplaneComponent": {},
+          "TransformComponent": {},
+          "TriplaneBufferComponent": {}
+        },
+        "name": "TriplaneVolume",
+        "parent": "960d71c8-d633-4e9a-a165-0956082c90fa"
+      },
+      "960d71c8-d633-4e9a-a165-0956082c90fa": {
+        "components": {
+          "TransformComponent": {
+            "rotation": [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "name": "VideoIn"
+      },
+      "de7896ce-a5d4-4f63-b973-256911d35403": {
+        "components": {
+          "CameraComponent": {},
+          "CameraControlBehavior": {},
+          "DisplayComponent": {
+            "horizontal_resolution_divider": 1,
+            "vertical_resolution_divider": 1
+          },
+          "RecordingBehavior": {},
+          "RecordingCallbackComponent": {},
+          "StereoViewComponent": {},
+          "TransformComponent": {}
+        },
+        "name": "Display"
+      }
+    }
+  }
+}

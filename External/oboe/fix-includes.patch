@@ -1,0 +1,96 @@
+diff --git a/src/flowgraph/resampler/IntegerRatio.h b/src/flowgraph/resampler/IntegerRatio.h
+index a6b524ce..7f85c944 100644
+--- a/src/flowgraph/resampler/IntegerRatio.h
++++ b/src/flowgraph/resampler/IntegerRatio.h
+@@ -18,6 +18,7 @@
+ #define RESAMPLER_INTEGER_RATIO_H
+ 
+ #include <sys/types.h>
++#include <cstdint>
+ 
+ #include "ResamplerDefinitions.h"
+ 
+diff --git a/src/flowgraph/resampler/LinearResampler.h b/src/flowgraph/resampler/LinearResampler.h
+index 5434379c..8aa447aa 100644
+--- a/src/flowgraph/resampler/LinearResampler.h
++++ b/src/flowgraph/resampler/LinearResampler.h
+@@ -19,7 +19,6 @@
+ 
+ #include <memory>
+ #include <sys/types.h>
+-#include <unistd.h>
+ 
+ #include "MultiChannelResampler.h"
+ #include "ResamplerDefinitions.h"
+diff --git a/src/flowgraph/resampler/MultiChannelResampler.h b/src/flowgraph/resampler/MultiChannelResampler.h
+index 9e47335a..51fe3109 100644
+--- a/src/flowgraph/resampler/MultiChannelResampler.h
++++ b/src/flowgraph/resampler/MultiChannelResampler.h
+@@ -20,7 +20,6 @@
+ #include <memory>
+ #include <vector>
+ #include <sys/types.h>
+-#include <unistd.h>
+ 
+ #ifndef MCR_USE_KAISER
+ // It appears from the spectrogram that the HyperbolicCosine window leads to fewer artifacts.
+diff --git a/src/flowgraph/resampler/PolyphaseResampler.h b/src/flowgraph/resampler/PolyphaseResampler.h
+index 3642fcec..aeef1acf 100644
+--- a/src/flowgraph/resampler/PolyphaseResampler.h
++++ b/src/flowgraph/resampler/PolyphaseResampler.h
+@@ -20,7 +20,6 @@
+ #include <memory>
+ #include <vector>
+ #include <sys/types.h>
+-#include <unistd.h>
+ 
+ #include "MultiChannelResampler.h"
+ #include "ResamplerDefinitions.h"
+diff --git a/src/flowgraph/resampler/PolyphaseResamplerMono.h b/src/flowgraph/resampler/PolyphaseResamplerMono.h
+index fe020b54..3c43bf96 100644
+--- a/src/flowgraph/resampler/PolyphaseResamplerMono.h
++++ b/src/flowgraph/resampler/PolyphaseResamplerMono.h
+@@ -18,7 +18,6 @@
+ #define RESAMPLER_POLYPHASE_RESAMPLER_MONO_H
+ 
+ #include <sys/types.h>
+-#include <unistd.h>
+ 
+ #include "PolyphaseResampler.h"
+ #include "ResamplerDefinitions.h"
+diff --git a/src/flowgraph/resampler/PolyphaseResamplerStereo.h b/src/flowgraph/resampler/PolyphaseResamplerStereo.h
+index ee4cabaa..8204ec0c 100644
+--- a/src/flowgraph/resampler/PolyphaseResamplerStereo.h
++++ b/src/flowgraph/resampler/PolyphaseResamplerStereo.h
+@@ -18,7 +18,6 @@
+ #define RESAMPLER_POLYPHASE_RESAMPLER_STEREO_H
+ 
+ #include <sys/types.h>
+-#include <unistd.h>
+ 
+ #include "PolyphaseResampler.h"
+ #include "ResamplerDefinitions.h"
+diff --git a/src/flowgraph/resampler/SincResampler.h b/src/flowgraph/resampler/SincResampler.h
+index 05ff0921..f8ff57c4 100644
+--- a/src/flowgraph/resampler/SincResampler.h
++++ b/src/flowgraph/resampler/SincResampler.h
+@@ -19,7 +19,6 @@
+ 
+ #include <memory>
+ #include <sys/types.h>
+-#include <unistd.h>
+ 
+ #include "MultiChannelResampler.h"
+ #include "ResamplerDefinitions.h"
+diff --git a/src/flowgraph/resampler/SincResamplerStereo.h b/src/flowgraph/resampler/SincResamplerStereo.h
+index d5576d18..8c244104 100644
+--- a/src/flowgraph/resampler/SincResamplerStereo.h
++++ b/src/flowgraph/resampler/SincResamplerStereo.h
+@@ -18,7 +18,6 @@
+ #define RESAMPLER_SINC_RESAMPLER_STEREO_H
+ 
+ #include <sys/types.h>
+-#include <unistd.h>
+ 
+ #include "SincResampler.h"
+ #include "ResamplerDefinitions.h"

@@ -1,0 +1,6 @@
+External/sr/
+build/
+out/
+.vs/
+.vscode/
+*.trtpkg

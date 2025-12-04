@@ -1,0 +1,149 @@
+{
+  "scene": {
+    "entities": {
+      "10b5814c-0ed5-4f9d-bf11-9407c7f00c14": {
+        "components": {
+          "TransformComponent": {
+            "rotation": [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "name": "RemoteDisplay"
+      },
+      "48c17a72-0907-4b1c-9c89-5d7aacd1d1b5": {
+        "components": {
+          "AudioEncoderComponent": {},
+          "AudioInputComponent": {
+            "capture_api": "PORT_AUDIO"
+          },
+          "AudioSinkComponent": {},
+          "EncodedVideoBufferComponent": null,
+          "FrameEncoderComponent": {},
+          "StreamSinkComponent": {
+            "rtsp_path": "/3dvc",
+            "rtsp_port": 6500,
+            "send_audio": true,
+            "sink_type": "RTSP_SERVER",
+            "udp_host": "127.0.0.1",
+            "udp_port": 6000
+          },
+          "TrackedHeadComponent": {},
+          "TransformComponent": {
+            "rotation": [
+              0.0,
+              0.9961947202682495,
+              0.08715573698282242,
+              0.0
+            ],
+            "translation": [
+              0.0,
+              0.2,
+              0.0
+            ]
+          },
+          "VideoFrameComponent": {
+            "show_video": true
+          },
+          "CameraCalibrationComponent": {},
+          "WebCameraComponent": {
+            "capture_api": "OPENCV_WEBCAM"
+          }
+        },
+        "name": "Webcam",
+        "parent": "b3a13b95-f413-4fc0-9fde-ab35c64c76cc"
+      },
+      "6862b512-e2db-41e4-be0b-0b72285ea461": {
+        "components": {
+          "RenderableTriplaneComponent": {},
+          "TransformComponent": {},
+          "TriplaneBufferComponent": {}
+        },
+        "name": "TriplaneVolume",
+        "parent": "10b5814c-0ed5-4f9d-bf11-9407c7f00c14"
+      },
+      "9a798ae5-8bce-4b22-bf6d-a42f3270d75f": {
+        "components": {
+          "AudioDecoderComponent": null,
+          "AudioSourceComponent": null,
+          "EncodedVideoCallbackComponent": null,
+          "FrameDecoderComponent": null,
+          "PoseCalibrationBehavior": {
+            "calibration_delay_ms": 1000,
+            "calibrate_on_startup": true
+          },
+          "StreamSourceComponent": {
+            "decode_video_frames": true,
+            "receive_audio": true,
+            "rtsp_host": "127.0.0.1",
+            "rtsp_path": "/3dvc",
+            "rtsp_port": 6500
+          },
+          "TrackedHeadComponent": {},
+          "TransformComponent": {
+            "rotation": [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "translation": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "VideoFrameComponent": {
+            "show_video": false
+          }
+        },
+        "name": "RemoteWebcam",
+        "parent": "10b5814c-0ed5-4f9d-bf11-9407c7f00c14"
+      },
+      "a521876f-e09e-4915-8453-b3f67d7a256e": {
+        "components": {
+          "CubeMapComponent": {},
+          "TransformComponent": null
+        },
+        "name": "SkyBox"
+      },
+      "b13b89f5-de4e-421c-a93e-4ba1d18428e4": {
+        "components": {
+          "EncodedTriplaneComponent": {},
+          "VideoEffectsComponent": {},
+          "VideoFrameComponent": {}
+        },
+        "name": "RemoteCropAndTriplane",
+        "parent": "9a798ae5-8bce-4b22-bf6d-a42f3270d75f"
+      },
+      "b3a13b95-f413-4fc0-9fde-ab35c64c76cc": {
+        "components": {
+          "AudioOutputComponent": {},
+          "CameraComponent": {},
+          "CameraControlBehavior": {},
+          "DisplayComponent": {
+            "horizontal_resolution_divider": 1,
+            "vertical_resolution_divider": 1
+          },
+          "RecordingBehavior": {
+            "enable": false,
+            "file_path": "recording.mkv"
+          },
+          "RecordingCallbackComponent": null,
+          "StereoViewComponent": {},
+          "TransformComponent": {},
+          "ViewExtensionBehavior": {}
+        },
+        "name": "Display"
+      }
+    }
+  }
+}
